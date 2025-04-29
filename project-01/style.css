@@ -1,0 +1,82 @@
+/* If we are using grid-template-areas we must use unique grid area term to refer an element to prcisely develop the grid */
+
+*{
+box-sizing: border-box;  
+}
+.body-section{
+    margin:0px 30px 0px 30px
+}
+.title{
+font-family: "Varela Round";
+text-align: center;
+margin:80px 0px 30px 0px;
+font-size:50px;
+/* Describes how inline contents of a block are horizontally aligned if the contents do not completely fill the line box. */
+}
+
+.section-2{
+   text-align:center;
+   padding: 0px 10px 0px 10px; 
+   border: 3px  solid black ;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   /* grid-area: section2; */
+}
+
+.subsection{
+    text-align:center;
+    padding: 0px 10px 0px 10px; 
+    border: 3px  solid black ;
+    border-top: 0px;
+    border-left: 0px;
+    /* grid-area: subsection; */
+}
+.section-1{
+    text-align: center;
+    border: 3px  solid black ;
+    border-top: 0px;
+    padding: 0px 10px 0px 10px;
+}
+
+.main-section{
+    display: grid;
+    grid-template-areas: "section1a section2a section1b" 
+    "section1c section2b section2b";
+    margin-bottom: 30px;
+}
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+    font-size:30px;
+    font-weight: 800;
+    color:rgb(99, 99, 99);
+    border:3px black solid;
+    padding: 30px 10px;
+    margin-bottom: 0%;
+}
+.heading-text{
+    font-family: "Varela Round";
+    text-align: center;
+    font-size: x-large;
+}
+.para-text{
+    /* font-family: ; */
+    font-size: medium;
+    text-align: left;
+}
+/* Pseudo Elements */
+
+a:link{
+    color:rgb(99, 99, 99);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(99, 99, 99);
+}
+a:hover{
+    text-decoration: underline;
+} 
